@@ -5,9 +5,9 @@ import { constants as constants96 } from '@dschu012/d2s/lib/data/versions/96_con
 import { constants as constants99 } from '@dschu012/d2s/lib/data/versions/99_constant_data';
 
 interface RunesSummary {
-  runes: ({[runeName: string]: number}),
-  readFiles: string[], // array or savefile names read from filesystem
-  readErrors: string[], // array or savefile names that were not read due to error
+  runes: ({[runeName: string]: number}), // object with the count of each rune
+  readFiles: string[], // array of savefile names read from filesystem
+  readErrors: string[], // array of savefile names that were not read due to error
 }
 
 interface Props {
